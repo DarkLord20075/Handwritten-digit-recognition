@@ -19,18 +19,8 @@ This indicates that there're meaningful differences in the datasets (e.g. the te
   <li>Results</li>
 </ul>
 
-<h2>Introduction</h2>
-This is my first hands-on beginner project attempting to write a code for a basic neural network recognizing handwritten digits.<br> Through the past months, I've been getting more and more interested in machine learning and how neural networks work, so I decided it was about time to try it out myself.<br><br>
-I started by watching a <a href="https://www.youtube.com/watch?v=w8yWXqWQYmU&t=1667s">YouTube video</a> to get familiar with the math and code that I needed. Then I opened my JupyterLab notebook, imported the training data, preprocessed it, splitting the data into a training and validation set, I shuffeled it and finally normalized the pixel values so they would be between 0 and 1. After that followed the forward and backward propagation, optimization of the parameters and finally I applied the gradient descent algorithm to make predictions.
-At the end I imported a different test data, letting it run through the model once again to see how well my neural network was doing giving me a new accuracy of predictions.<br>
-Additionally, I added many comments to each step in order to help me (and maybe other beginners) understand what each funtion does, so I wouldn't get confused.<br> <br>
-
-Unfortunately, the initial code I used from the video, presented some errors (even after making sure that I corrected the ones from the video itself). This made it definitely more complicated than expected but very realistic as I understand now that writing code is not always a piece of cake. ;)<br> For the very last section (cell [15]; I forgot to mention this in my kernel) I partially used ChatGPT 3.5 to help me solve what's wrong, making my code run smoothly after hours of work.<br> <br>
-I'm very happy with the outcome and hope by uploading this file, I can help viewers with understanding how this neural network runs and inspire others to try it out themselves!<br> 
-
- 
 <h2>Data Source</h2>
-I found both of my MNIST datasets on Kaggle, each consisting of hand-drawn gray-scale images ranging from 0-9. 
+I found both of my MNIST datasets on Kaggle, each consisting of hand-drawn gray-scale images ranging from 0-9. for the train set <a href="https://www.kaggle.com/competitions/digit-recognizer/data?select=train.csv">.
 Both sets are extremely clean and don't need any modification. Here is more information about the data, taken directly from <a href="https://www.kaggle.com"> Kaggle </a>.<br> <br>
 
 > The data files train.csv and test.csv contain gray-scale images of hand-drawn digits, from zero through nine. <br>Each image is 28 pixels in height and 28 pixels in width, for a total of 784 pixels in total. Each pixel has a single pixel-value associated with it, indicating the lightness or darkness of that pixel, with higher numbers meaning darker. This pixel-value is an integer between 0 and 255, inclusive. <br>The training data set, (train.csv), has 785 columns. The first column, called "label", is the digit that was drawn by the user. The rest of the columns contain the pixel-values of the associated image.<br> <br>
